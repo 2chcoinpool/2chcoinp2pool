@@ -21,7 +21,7 @@ nets = dict(
             '2chcoinaddress' in (yield bitcoind.rpc_help()) and
             not (yield bitcoind.rpc_getinfo())['testnet']
         )),
-        SUBSIDY_FUNC=lambda height: 2048*100000000 >> (height + 1)//60480,
+        SUBSIDY_FUNC=lambda height: 2048*100000000 >> (height + 1)//30240,
         BLOCKHASH_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
         POW_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
         BLOCK_PERIOD=30, # s
@@ -47,7 +47,7 @@ nets = dict(
             'quarkcoinaddress' in (yield bitcoind.rpc_help()) and
             (yield bitcoind.rpc_getinfo())['testnet']
         )),
-        SUBSIDY_FUNC=lambda height: 2048*100000000 >> (height + 1)//60480,
+        SUBSIDY_FUNC=lambda height: 2048*100000000 >> (height + 1)//30240,
         BLOCKHASH_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
         POW_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
         BLOCK_PERIOD=30, # s
