@@ -1,0 +1,518 @@
+2014-01-05 00:22:19.240500 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2014-01-05 00:22:19.240661  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2014-01-05 00:22:23.470881 Handshake timed out, disconnecting from 95.85.20.95:8376
+2014-01-05 00:22:24.889477 RECV headers 0170000000034ff93359708633d6085f069d34225b3621f5fafc9ef06ff01808d30100000031dfa243dcec7ffc83f736a2bb94c35f943794a119bb101f19ed0392630f70ce3389c852d277021d04aaba4a00
+2014-01-05 00:22:24.890454 > Error handling message: (see RECV line)
+2014-01-05 00:22:24.890633 > Traceback (most recent call last):
+2014-01-05 00:22:24.890700 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 215, in doRead
+2014-01-05 00:22:24.890768 >     return self._dataReceived(data)
+2014-01-05 00:22:24.890828 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 221, in _dataReceived
+2014-01-05 00:22:24.890894 >     rval = self.protocol.dataReceived(data)
+2014-01-05 00:22:24.890998 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 27, in dataReceived
+2014-01-05 00:22:24.891264 >     self.dataReceived2(data)
+2014-01-05 00:22:24.891330 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/datachunker.py", line 40, in _DataChunker
+2014-01-05 00:22:24.891390 >     wants = receiver.send(buf.get(wants))
+2014-01-05 00:22:24.891451 > --- <exception caught here> ---
+2014-01-05 00:22:24.891510 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 57, in dataReceiver
+2014-01-05 00:22:24.891585 >     self.packetReceived(command, type_.unpack(payload, self.ignore_trailing_payload))
+2014-01-05 00:22:24.891644 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 71, in packetReceived
+2014-01-05 00:22:24.891703 >     handler(**payload2)
+2014-01-05 00:22:24.891761 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/p2p.py", line 130, in handle_headers
+2014-01-05 00:22:24.891819 >     header_hash = self.net.BLOCKHASH_FUNC(bitcoin_data.block_header_type.pack(header))
+2014-01-05 00:22:24.891881 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/networks.py", line 25, in <lambda>
+2014-01-05 00:22:24.891941 >     BLOCKHASH_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
+2014-01-05 00:22:24.891998 > exceptions.ImportError: No module named quark_hash
+2014-01-05 00:22:29.815440 > Unhandled error in Deferred:
+2014-01-05 00:22:29.815666 > Unhandled Error
+2014-01-05 00:22:29.815724 > Traceback (most recent call last):
+2014-01-05 00:22:29.815776 > Failure: twisted.internet.defer.TimeoutError: in ReplyMatcher
+2014-01-05 00:22:34.242413 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2014-01-05 00:22:34.242577  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2014-01-05 00:22:35.373329 Handshake timed out, disconnecting from 95.85.20.95:8376
+2014-01-05 00:22:39.923664 RECV headers 0170000000034ff93359708633d6085f069d34225b3621f5fafc9ef06ff01808d30100000031dfa243dcec7ffc83f736a2bb94c35f943794a119bb101f19ed0392630f70ce3389c852d277021d04aaba4a00
+2014-01-05 00:22:39.924487 > Error handling message: (see RECV line)
+2014-01-05 00:22:39.924586 > Traceback (most recent call last):
+2014-01-05 00:22:39.924640 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 215, in doRead
+2014-01-05 00:22:39.924693 >     return self._dataReceived(data)
+2014-01-05 00:22:39.924743 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 221, in _dataReceived
+2014-01-05 00:22:39.924794 >     rval = self.protocol.dataReceived(data)
+2014-01-05 00:22:39.924844 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 27, in dataReceived
+2014-01-05 00:22:39.924894 >     self.dataReceived2(data)
+2014-01-05 00:22:39.924956 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/datachunker.py", line 40, in _DataChunker
+2014-01-05 00:22:39.925007 >     wants = receiver.send(buf.get(wants))
+2014-01-05 00:22:39.925056 > --- <exception caught here> ---
+2014-01-05 00:22:39.925104 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 57, in dataReceiver
+2014-01-05 00:22:39.925155 >     self.packetReceived(command, type_.unpack(payload, self.ignore_trailing_payload))
+2014-01-05 00:22:39.925205 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 71, in packetReceived
+2014-01-05 00:22:39.925254 >     handler(**payload2)
+2014-01-05 00:22:39.925303 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/p2p.py", line 130, in handle_headers
+2014-01-05 00:22:39.925352 >     header_hash = self.net.BLOCKHASH_FUNC(bitcoin_data.block_header_type.pack(header))
+2014-01-05 00:22:39.925402 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/networks.py", line 25, in <lambda>
+2014-01-05 00:22:39.925452 >     BLOCKHASH_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
+2014-01-05 00:22:39.925500 > exceptions.ImportError: No module named quark_hash
+2014-01-05 00:22:44.824750 > Unhandled error in Deferred:
+2014-01-05 00:22:44.824961 > Unhandled Error
+2014-01-05 00:22:44.825018 > Traceback (most recent call last):
+2014-01-05 00:22:44.825070 > Failure: twisted.internet.defer.TimeoutError: in ReplyMatcher
+2014-01-05 00:22:49.244833 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2014-01-05 00:22:49.244968  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2014-01-05 00:22:51.023383 Handshake timed out, disconnecting from 95.85.20.95:8376
+2014-01-05 00:22:54.855055 RECV headers 0170000000034ff93359708633d6085f069d34225b3621f5fafc9ef06ff01808d30100000031dfa243dcec7ffc83f736a2bb94c35f943794a119bb101f19ed0392630f70ce3389c852d277021d04aaba4a00
+2014-01-05 00:22:54.856319 > Error handling message: (see RECV line)
+2014-01-05 00:22:54.856460 > Traceback (most recent call last):
+2014-01-05 00:22:54.856527 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 215, in doRead
+2014-01-05 00:22:54.856611 >     return self._dataReceived(data)
+2014-01-05 00:22:54.856672 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 221, in _dataReceived
+2014-01-05 00:22:54.856734 >     rval = self.protocol.dataReceived(data)
+2014-01-05 00:22:54.856793 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 27, in dataReceived
+2014-01-05 00:22:54.856853 >     self.dataReceived2(data)
+2014-01-05 00:22:54.856911 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/datachunker.py", line 40, in _DataChunker
+2014-01-05 00:22:54.856971 >     wants = receiver.send(buf.get(wants))
+2014-01-05 00:22:54.857028 > --- <exception caught here> ---
+2014-01-05 00:22:54.857091 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 57, in dataReceiver
+2014-01-05 00:22:54.857151 >     self.packetReceived(command, type_.unpack(payload, self.ignore_trailing_payload))
+2014-01-05 00:22:54.857210 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 71, in packetReceived
+2014-01-05 00:22:54.857269 >     handler(**payload2)
+2014-01-05 00:22:54.857328 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/p2p.py", line 130, in handle_headers
+2014-01-05 00:22:54.857387 >     header_hash = self.net.BLOCKHASH_FUNC(bitcoin_data.block_header_type.pack(header))
+2014-01-05 00:22:54.857446 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/networks.py", line 25, in <lambda>
+2014-01-05 00:22:54.857505 >     BLOCKHASH_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
+2014-01-05 00:22:54.857594 > exceptions.ImportError: No module named quark_hash
+2014-01-05 00:22:59.828223 > Unhandled error in Deferred:
+2014-01-05 00:22:59.828434 > Unhandled Error
+2014-01-05 00:22:59.828490 > Traceback (most recent call last):
+2014-01-05 00:22:59.828554 > Failure: twisted.internet.defer.TimeoutError: in ReplyMatcher
+2014-01-05 00:23:02.292426 Handshake timed out, disconnecting from 95.85.20.95:8376
+2014-01-05 00:23:04.246095 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2014-01-05 00:23:04.246231  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2014-01-05 00:23:09.885373 RECV headers 0170000000034ff93359708633d6085f069d34225b3621f5fafc9ef06ff01808d30100000031dfa243dcec7ffc83f736a2bb94c35f943794a119bb101f19ed0392630f70ce3389c852d277021d04aaba4a00
+2014-01-05 00:23:09.886198 > Error handling message: (see RECV line)
+2014-01-05 00:23:09.886279 > Traceback (most recent call last):
+2014-01-05 00:23:09.886331 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 215, in doRead
+2014-01-05 00:23:09.886383 >     return self._dataReceived(data)
+2014-01-05 00:23:09.886432 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 221, in _dataReceived
+2014-01-05 00:23:09.886482 >     rval = self.protocol.dataReceived(data)
+2014-01-05 00:23:09.886531 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 27, in dataReceived
+2014-01-05 00:23:09.886598 >     self.dataReceived2(data)
+2014-01-05 00:23:09.886647 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/datachunker.py", line 40, in _DataChunker
+2014-01-05 00:23:09.886696 >     wants = receiver.send(buf.get(wants))
+2014-01-05 00:23:09.886743 > --- <exception caught here> ---
+2014-01-05 00:23:09.886792 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 57, in dataReceiver
+2014-01-05 00:23:09.886841 >     self.packetReceived(command, type_.unpack(payload, self.ignore_trailing_payload))
+2014-01-05 00:23:09.886891 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 71, in packetReceived
+2014-01-05 00:23:09.886939 >     handler(**payload2)
+2014-01-05 00:23:09.886987 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/p2p.py", line 130, in handle_headers
+2014-01-05 00:23:09.887036 >     header_hash = self.net.BLOCKHASH_FUNC(bitcoin_data.block_header_type.pack(header))
+2014-01-05 00:23:09.887086 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/networks.py", line 25, in <lambda>
+2014-01-05 00:23:09.887135 >     BLOCKHASH_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
+2014-01-05 00:23:09.887183 > exceptions.ImportError: No module named quark_hash
+2014-01-05 00:23:14.832228 > Unhandled error in Deferred:
+2014-01-05 00:23:14.832464 > Unhandled Error
+2014-01-05 00:23:14.832527 > Traceback (most recent call last):
+2014-01-05 00:23:14.832594 > Failure: twisted.internet.defer.TimeoutError: in ReplyMatcher
+2014-01-05 00:23:17.035339 Handshake timed out, disconnecting from 95.85.20.95:8376
+2014-01-05 00:23:19.248139 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2014-01-05 00:23:19.248273  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2014-01-05 00:23:24.915803 RECV headers 0170000000034ff93359708633d6085f069d34225b3621f5fafc9ef06ff01808d30100000031dfa243dcec7ffc83f736a2bb94c35f943794a119bb101f19ed0392630f70ce3389c852d277021d04aaba4a00
+2014-01-05 00:23:24.916750 > Error handling message: (see RECV line)
+2014-01-05 00:23:24.916864 > Traceback (most recent call last):
+2014-01-05 00:23:24.916929 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 215, in doRead
+2014-01-05 00:23:24.916992 >     return self._dataReceived(data)
+2014-01-05 00:23:24.917074 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 221, in _dataReceived
+2014-01-05 00:23:24.917139 >     rval = self.protocol.dataReceived(data)
+2014-01-05 00:23:24.917197 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 27, in dataReceived
+2014-01-05 00:23:24.917256 >     self.dataReceived2(data)
+2014-01-05 00:23:24.917314 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/datachunker.py", line 40, in _DataChunker
+2014-01-05 00:23:24.917372 >     wants = receiver.send(buf.get(wants))
+2014-01-05 00:23:24.917429 > --- <exception caught here> ---
+2014-01-05 00:23:24.917486 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 57, in dataReceiver
+2014-01-05 00:23:24.917557 >     self.packetReceived(command, type_.unpack(payload, self.ignore_trailing_payload))
+2014-01-05 00:23:24.917621 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 71, in packetReceived
+2014-01-05 00:23:24.917683 >     handler(**payload2)
+2014-01-05 00:23:24.917742 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/p2p.py", line 130, in handle_headers
+2014-01-05 00:23:24.917800 >     header_hash = self.net.BLOCKHASH_FUNC(bitcoin_data.block_header_type.pack(header))
+2014-01-05 00:23:24.917859 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/networks.py", line 25, in <lambda>
+2014-01-05 00:23:24.917922 >     BLOCKHASH_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
+2014-01-05 00:23:24.917980 > exceptions.ImportError: No module named quark_hash
+2014-01-05 00:23:29.584631 Handshake timed out, disconnecting from 95.85.20.95:8376
+2014-01-05 00:23:29.835384 > Unhandled error in Deferred:
+2014-01-05 00:23:29.835603 > Unhandled Error
+2014-01-05 00:23:29.835661 > Traceback (most recent call last):
+2014-01-05 00:23:29.835714 > Failure: twisted.internet.defer.TimeoutError: in ReplyMatcher
+2014-01-05 00:23:34.250377 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2014-01-05 00:23:34.250513  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2014-01-05 00:23:39.672390 RECV headers 017000000078dbf40fbc88f2aa5ac401b29239f4f8433475e5d5eb2c2db615f55a02000000711adef09cb5f6803b765081e49da7dae7dd42c1194369dfd3951a87c08946bbb789c852d277021d8000951000
+2014-01-05 00:23:39.673236 > Error handling message: (see RECV line)
+2014-01-05 00:23:39.673326 > Traceback (most recent call last):
+2014-01-05 00:23:39.673382 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 215, in doRead
+2014-01-05 00:23:39.673435 >     return self._dataReceived(data)
+2014-01-05 00:23:39.673485 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 221, in _dataReceived
+2014-01-05 00:23:39.673552 >     rval = self.protocol.dataReceived(data)
+2014-01-05 00:23:39.673605 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 27, in dataReceived
+2014-01-05 00:23:39.673656 >     self.dataReceived2(data)
+2014-01-05 00:23:39.673704 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/datachunker.py", line 40, in _DataChunker
+2014-01-05 00:23:39.673754 >     wants = receiver.send(buf.get(wants))
+2014-01-05 00:23:39.673802 > --- <exception caught here> ---
+2014-01-05 00:23:39.673850 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 57, in dataReceiver
+2014-01-05 00:23:39.673900 >     self.packetReceived(command, type_.unpack(payload, self.ignore_trailing_payload))
+2014-01-05 00:23:39.673949 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 71, in packetReceived
+2014-01-05 00:23:39.673998 >     handler(**payload2)
+2014-01-05 00:23:39.674046 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/p2p.py", line 130, in handle_headers
+2014-01-05 00:23:39.674108 >     header_hash = self.net.BLOCKHASH_FUNC(bitcoin_data.block_header_type.pack(header))
+2014-01-05 00:23:39.674158 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/networks.py", line 25, in <lambda>
+2014-01-05 00:23:39.674208 >     BLOCKHASH_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
+2014-01-05 00:23:39.674257 > exceptions.ImportError: No module named quark_hash
+2014-01-05 00:23:44.569891 > Unhandled error in Deferred:
+2014-01-05 00:23:44.570099 > Unhandled Error
+2014-01-05 00:23:44.570155 > Traceback (most recent call last):
+2014-01-05 00:23:44.570207 > Failure: twisted.internet.defer.TimeoutError: in ReplyMatcher
+2014-01-05 00:23:49.251824 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2014-01-05 00:23:49.251960  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2014-01-05 00:23:54.610633 RECV headers 017000000078dbf40fbc88f2aa5ac401b29239f4f8433475e5d5eb2c2db615f55a02000000711adef09cb5f6803b765081e49da7dae7dd42c1194369dfd3951a87c08946bbb789c852d277021d8000951000
+2014-01-05 00:23:54.611435 > Error handling message: (see RECV line)
+2014-01-05 00:23:54.611527 > Traceback (most recent call last):
+2014-01-05 00:23:54.611607 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 215, in doRead
+2014-01-05 00:23:54.611702 >     return self._dataReceived(data)
+2014-01-05 00:23:54.611763 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 221, in _dataReceived
+2014-01-05 00:23:54.611825 >     rval = self.protocol.dataReceived(data)
+2014-01-05 00:23:54.611884 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 27, in dataReceived
+2014-01-05 00:23:54.611943 >     self.dataReceived2(data)
+2014-01-05 00:23:54.612001 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/datachunker.py", line 40, in _DataChunker
+2014-01-05 00:23:54.612059 >     wants = receiver.send(buf.get(wants))
+2014-01-05 00:23:54.612116 > --- <exception caught here> ---
+2014-01-05 00:23:54.612173 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 57, in dataReceiver
+2014-01-05 00:23:54.612236 >     self.packetReceived(command, type_.unpack(payload, self.ignore_trailing_payload))
+2014-01-05 00:23:54.612295 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 71, in packetReceived
+2014-01-05 00:23:54.612355 >     handler(**payload2)
+2014-01-05 00:23:54.612413 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/p2p.py", line 130, in handle_headers
+2014-01-05 00:23:54.612473 >     header_hash = self.net.BLOCKHASH_FUNC(bitcoin_data.block_header_type.pack(header))
+2014-01-05 00:23:54.612531 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/networks.py", line 25, in <lambda>
+2014-01-05 00:23:54.612603 >     BLOCKHASH_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
+2014-01-05 00:23:54.612661 > exceptions.ImportError: No module named quark_hash
+2014-01-05 00:23:57.120033 Handshake timed out, disconnecting from 95.85.20.95:8376
+2014-01-05 00:23:59.573265 > Unhandled error in Deferred:
+2014-01-05 00:23:59.573505 > Unhandled Error
+2014-01-05 00:23:59.573584 > Traceback (most recent call last):
+2014-01-05 00:23:59.573638 > Failure: twisted.internet.defer.TimeoutError: in ReplyMatcher
+2014-01-05 00:24:00.748270 RECV headers 0102000000f019d5df790bde771c31455d2a2e07a1d930ae56f23a992f5dca4f750000000096bcbbb802712144fb6f6799e7cbe94f85fa40cde124b3c8d1e9b64cb6825232cb89c852d277021dd557095f00
+2014-01-05 00:24:00.749089 > Error handling message: (see RECV line)
+2014-01-05 00:24:00.749173 > Traceback (most recent call last):
+2014-01-05 00:24:00.749229 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 215, in doRead
+2014-01-05 00:24:00.749303 >     return self._dataReceived(data)
+2014-01-05 00:24:00.749355 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 221, in _dataReceived
+2014-01-05 00:24:00.749408 >     rval = self.protocol.dataReceived(data)
+2014-01-05 00:24:00.749459 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 27, in dataReceived
+2014-01-05 00:24:00.749510 >     self.dataReceived2(data)
+2014-01-05 00:24:00.749580 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/datachunker.py", line 40, in _DataChunker
+2014-01-05 00:24:00.749633 >     wants = receiver.send(buf.get(wants))
+2014-01-05 00:24:00.749682 > --- <exception caught here> ---
+2014-01-05 00:24:00.749731 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 57, in dataReceiver
+2014-01-05 00:24:00.749781 >     self.packetReceived(command, type_.unpack(payload, self.ignore_trailing_payload))
+2014-01-05 00:24:00.749830 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 71, in packetReceived
+2014-01-05 00:24:00.749880 >     handler(**payload2)
+2014-01-05 00:24:00.749928 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/p2p.py", line 130, in handle_headers
+2014-01-05 00:24:00.749978 >     header_hash = self.net.BLOCKHASH_FUNC(bitcoin_data.block_header_type.pack(header))
+2014-01-05 00:24:00.750028 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/networks.py", line 25, in <lambda>
+2014-01-05 00:24:00.750078 >     BLOCKHASH_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
+2014-01-05 00:24:00.750127 > exceptions.ImportError: No module named quark_hash
+2014-01-05 00:24:04.254282 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2014-01-05 00:24:04.254438  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2014-01-05 00:24:05.641819 > Unhandled error in Deferred:
+2014-01-05 00:24:05.642023 > Unhandled Error
+2014-01-05 00:24:05.642080 > Traceback (most recent call last):
+2014-01-05 00:24:05.642131 > Failure: twisted.internet.defer.TimeoutError: in ReplyMatcher
+2014-01-05 00:24:10.391635 RECV headers 01700000009f33a7aa9d83482d7119c5a58523ca9441a9fcc47de1ad160da87dd9010000007a67d99ab949ec9eba4e188dbf5a56b06180c71f7ec619422c81ef68f7659369e189c852d277021d707b030000
+2014-01-05 00:24:10.392401 > Error handling message: (see RECV line)
+2014-01-05 00:24:10.392473 > Traceback (most recent call last):
+2014-01-05 00:24:10.392526 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 215, in doRead
+2014-01-05 00:24:10.392596 >     return self._dataReceived(data)
+2014-01-05 00:24:10.392647 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 221, in _dataReceived
+2014-01-05 00:24:10.392698 >     rval = self.protocol.dataReceived(data)
+2014-01-05 00:24:10.392748 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 27, in dataReceived
+2014-01-05 00:24:10.392798 >     self.dataReceived2(data)
+2014-01-05 00:24:10.392847 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/datachunker.py", line 40, in _DataChunker
+2014-01-05 00:24:10.392897 >     wants = receiver.send(buf.get(wants))
+2014-01-05 00:24:10.392944 > --- <exception caught here> ---
+2014-01-05 00:24:10.392993 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 57, in dataReceiver
+2014-01-05 00:24:10.393049 >     self.packetReceived(command, type_.unpack(payload, self.ignore_trailing_payload))
+2014-01-05 00:24:10.393100 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 71, in packetReceived
+2014-01-05 00:24:10.393150 >     handler(**payload2)
+2014-01-05 00:24:10.393199 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/p2p.py", line 130, in handle_headers
+2014-01-05 00:24:10.393265 >     header_hash = self.net.BLOCKHASH_FUNC(bitcoin_data.block_header_type.pack(header))
+2014-01-05 00:24:10.393317 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/networks.py", line 25, in <lambda>
+2014-01-05 00:24:10.393366 >     BLOCKHASH_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
+2014-01-05 00:24:10.393414 > exceptions.ImportError: No module named quark_hash
+2014-01-05 00:24:10.924969 Handshake timed out, disconnecting from 95.85.20.95:8376
+2014-01-05 00:24:13.624565 RECV headers 01700000006b1fc079f123d39dd235b239b9ac0d0f567c05ea920fa5a81ebaca0c020000002135d6f060960a2dbeaae12e89f636ebcb4044de7db659c082b67f484737d839db89c852d277021d003128d600
+2014-01-05 00:24:13.624910 > Error handling message: (see RECV line)
+2014-01-05 00:24:13.624972 > Traceback (most recent call last):
+2014-01-05 00:24:13.625025 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 215, in doRead
+2014-01-05 00:24:13.625138 >     return self._dataReceived(data)
+2014-01-05 00:24:13.625225 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 221, in _dataReceived
+2014-01-05 00:24:13.625276 >     rval = self.protocol.dataReceived(data)
+2014-01-05 00:24:13.625325 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 27, in dataReceived
+2014-01-05 00:24:13.625375 >     self.dataReceived2(data)
+2014-01-05 00:24:13.625423 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/datachunker.py", line 40, in _DataChunker
+2014-01-05 00:24:13.625473 >     wants = receiver.send(buf.get(wants))
+2014-01-05 00:24:13.625521 > --- <exception caught here> ---
+2014-01-05 00:24:13.625585 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 57, in dataReceiver
+2014-01-05 00:24:13.625700 >     self.packetReceived(command, type_.unpack(payload, self.ignore_trailing_payload))
+2014-01-05 00:24:13.625750 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 71, in packetReceived
+2014-01-05 00:24:13.625839 >     handler(**payload2)
+2014-01-05 00:24:13.625888 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/p2p.py", line 130, in handle_headers
+2014-01-05 00:24:13.625937 >     header_hash = self.net.BLOCKHASH_FUNC(bitcoin_data.block_header_type.pack(header))
+2014-01-05 00:24:13.625986 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/networks.py", line 25, in <lambda>
+2014-01-05 00:24:13.626076 >     BLOCKHASH_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
+2014-01-05 00:24:13.626125 > exceptions.ImportError: No module named quark_hash
+2014-01-05 00:24:15.287163 > Unhandled error in Deferred:
+2014-01-05 00:24:15.287395 > Unhandled Error
+2014-01-05 00:24:15.287451 > Traceback (most recent call last):
+2014-01-05 00:24:15.287503 > Failure: twisted.internet.defer.TimeoutError: in ReplyMatcher
+2014-01-05 00:24:18.523276 > Unhandled error in Deferred:
+2014-01-05 00:24:18.523483 > Unhandled Error
+2014-01-05 00:24:18.523555 > Traceback (most recent call last):
+2014-01-05 00:24:18.523609 > Failure: twisted.internet.defer.TimeoutError: in ReplyMatcher
+2014-01-05 00:24:19.256832 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2014-01-05 00:24:19.256980  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2014-01-05 00:24:28.564349 RECV headers 01700000006b1fc079f123d39dd235b239b9ac0d0f567c05ea920fa5a81ebaca0c020000002135d6f060960a2dbeaae12e89f636ebcb4044de7db659c082b67f484737d839db89c852d277021d003128d600
+2014-01-05 00:24:28.565202 > Error handling message: (see RECV line)
+2014-01-05 00:24:28.565301 > Traceback (most recent call last):
+2014-01-05 00:24:28.565366 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 215, in doRead
+2014-01-05 00:24:28.565440 >     return self._dataReceived(data)
+2014-01-05 00:24:28.565499 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 221, in _dataReceived
+2014-01-05 00:24:28.565575 >     rval = self.protocol.dataReceived(data)
+2014-01-05 00:24:28.565639 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 27, in dataReceived
+2014-01-05 00:24:28.565698 >     self.dataReceived2(data)
+2014-01-05 00:24:28.565755 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/datachunker.py", line 40, in _DataChunker
+2014-01-05 00:24:28.565812 >     wants = receiver.send(buf.get(wants))
+2014-01-05 00:24:28.565869 > --- <exception caught here> ---
+2014-01-05 00:24:28.565926 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 57, in dataReceiver
+2014-01-05 00:24:28.565988 >     self.packetReceived(command, type_.unpack(payload, self.ignore_trailing_payload))
+2014-01-05 00:24:28.566046 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 71, in packetReceived
+2014-01-05 00:24:28.566104 >     handler(**payload2)
+2014-01-05 00:24:28.566161 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/p2p.py", line 130, in handle_headers
+2014-01-05 00:24:28.566219 >     header_hash = self.net.BLOCKHASH_FUNC(bitcoin_data.block_header_type.pack(header))
+2014-01-05 00:24:28.566277 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/networks.py", line 25, in <lambda>
+2014-01-05 00:24:28.566338 >     BLOCKHASH_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
+2014-01-05 00:24:28.566395 > exceptions.ImportError: No module named quark_hash
+2014-01-05 00:24:29.671309 Handshake timed out, disconnecting from 95.85.20.95:8376
+2014-01-05 00:24:33.527258 > Unhandled error in Deferred:
+2014-01-05 00:24:33.527468 > Unhandled Error
+2014-01-05 00:24:33.527524 > Traceback (most recent call last):
+2014-01-05 00:24:33.527592 > Failure: twisted.internet.defer.TimeoutError: in ReplyMatcher
+2014-01-05 00:24:34.259218 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2014-01-05 00:24:34.259338  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2014-01-05 00:24:40.708736 RECV headers 0102000000a4911196ce327159bc2bf59b3478c6f3fd7347737c355bc44944c09c000000008fcac3c55076d722dfd0a0b6c9b3b965105161fde81829be6d215538529a7fabed89c852d277021daaad4d6400
+2014-01-05 00:24:40.709650 > Error handling message: (see RECV line)
+2014-01-05 00:24:40.709769 > Traceback (most recent call last):
+2014-01-05 00:24:40.709826 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 215, in doRead
+2014-01-05 00:24:40.709881 >     return self._dataReceived(data)
+2014-01-05 00:24:40.709934 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 221, in _dataReceived
+2014-01-05 00:24:40.709988 >     rval = self.protocol.dataReceived(data)
+2014-01-05 00:24:40.710041 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 27, in dataReceived
+2014-01-05 00:24:40.710093 >     self.dataReceived2(data)
+2014-01-05 00:24:40.710145 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/datachunker.py", line 40, in _DataChunker
+2014-01-05 00:24:40.710197 >     wants = receiver.send(buf.get(wants))
+2014-01-05 00:24:40.710248 > --- <exception caught here> ---
+2014-01-05 00:24:40.710299 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 57, in dataReceiver
+2014-01-05 00:24:40.710351 >     self.packetReceived(command, type_.unpack(payload, self.ignore_trailing_payload))
+2014-01-05 00:24:40.710404 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 71, in packetReceived
+2014-01-05 00:24:40.710476 >     handler(**payload2)
+2014-01-05 00:24:40.710526 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/p2p.py", line 130, in handle_headers
+2014-01-05 00:24:40.710597 >     header_hash = self.net.BLOCKHASH_FUNC(bitcoin_data.block_header_type.pack(header))
+2014-01-05 00:24:40.710650 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/networks.py", line 25, in <lambda>
+2014-01-05 00:24:40.710702 >     BLOCKHASH_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
+2014-01-05 00:24:40.710752 > exceptions.ImportError: No module named quark_hash
+2014-01-05 00:24:42.715305 Handshake timed out, disconnecting from 95.85.20.95:8376
+2014-01-05 00:24:45.604122 > Unhandled error in Deferred:
+2014-01-05 00:24:45.604366 > Unhandled Error
+2014-01-05 00:24:45.604428 > Traceback (most recent call last):
+2014-01-05 00:24:45.604481 > Failure: twisted.internet.defer.TimeoutError: in ReplyMatcher
+2014-01-05 00:24:49.260653 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2014-01-05 00:24:49.260783  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2014-01-05 00:24:55.652386 RECV headers 0102000000a4911196ce327159bc2bf59b3478c6f3fd7347737c355bc44944c09c000000008fcac3c55076d722dfd0a0b6c9b3b965105161fde81829be6d215538529a7fabed89c852d277021daaad4d6400
+2014-01-05 00:24:55.653342 > Error handling message: (see RECV line)
+2014-01-05 00:24:55.653437 > Traceback (most recent call last):
+2014-01-05 00:24:55.653506 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 215, in doRead
+2014-01-05 00:24:55.653585 >     return self._dataReceived(data)
+2014-01-05 00:24:55.653644 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 221, in _dataReceived
+2014-01-05 00:24:55.653705 >     rval = self.protocol.dataReceived(data)
+2014-01-05 00:24:55.653766 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 27, in dataReceived
+2014-01-05 00:24:55.654097 >     self.dataReceived2(data)
+2014-01-05 00:24:55.654174 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/datachunker.py", line 40, in _DataChunker
+2014-01-05 00:24:55.654236 >     wants = receiver.send(buf.get(wants))
+2014-01-05 00:24:55.654294 > --- <exception caught here> ---
+2014-01-05 00:24:55.654358 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 57, in dataReceiver
+2014-01-05 00:24:55.654419 >     self.packetReceived(command, type_.unpack(payload, self.ignore_trailing_payload))
+2014-01-05 00:24:55.654478 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 71, in packetReceived
+2014-01-05 00:24:55.654550 >     handler(**payload2)
+2014-01-05 00:24:55.654610 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/p2p.py", line 130, in handle_headers
+2014-01-05 00:24:55.654674 >     header_hash = self.net.BLOCKHASH_FUNC(bitcoin_data.block_header_type.pack(header))
+2014-01-05 00:24:55.654867 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/networks.py", line 25, in <lambda>
+2014-01-05 00:24:55.654929 >     BLOCKHASH_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
+2014-01-05 00:24:55.654986 > exceptions.ImportError: No module named quark_hash
+2014-01-05 00:25:00.607268 > Unhandled error in Deferred:
+2014-01-05 00:25:00.607475 > Unhandled Error
+2014-01-05 00:25:00.607531 > Traceback (most recent call last):
+2014-01-05 00:25:00.607603 > Failure: twisted.internet.defer.TimeoutError: in ReplyMatcher
+2014-01-05 00:25:04.262388 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2014-01-05 00:25:04.262556  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2014-01-05 00:25:04.688246 Handshake timed out, disconnecting from 95.85.20.95:8376
+2014-01-05 00:25:10.691360 RECV headers 0102000000a4911196ce327159bc2bf59b3478c6f3fd7347737c355bc44944c09c000000008fcac3c55076d722dfd0a0b6c9b3b965105161fde81829be6d215538529a7fabed89c852d277021daaad4d6400
+2014-01-05 00:25:10.693154 > Error handling message: (see RECV line)
+2014-01-05 00:25:10.693741 > Traceback (most recent call last):
+2014-01-05 00:25:10.694133 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 215, in doRead
+2014-01-05 00:25:10.694514 >     return self._dataReceived(data)
+2014-01-05 00:25:10.694946 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 221, in _dataReceived
+2014-01-05 00:25:10.695337 >     rval = self.protocol.dataReceived(data)
+2014-01-05 00:25:10.695747 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 27, in dataReceived
+2014-01-05 00:25:10.696626 >     self.dataReceived2(data)
+2014-01-05 00:25:10.696998 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/datachunker.py", line 40, in _DataChunker
+2014-01-05 00:25:10.697380 >     wants = receiver.send(buf.get(wants))
+2014-01-05 00:25:10.697761 > --- <exception caught here> ---
+2014-01-05 00:25:10.698139 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 57, in dataReceiver
+2014-01-05 00:25:10.698529 >     self.packetReceived(command, type_.unpack(payload, self.ignore_trailing_payload))
+2014-01-05 00:25:10.698938 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 71, in packetReceived
+2014-01-05 00:25:10.699325 >     handler(**payload2)
+2014-01-05 00:25:10.699710 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/p2p.py", line 130, in handle_headers
+2014-01-05 00:25:10.700090 >     header_hash = self.net.BLOCKHASH_FUNC(bitcoin_data.block_header_type.pack(header))
+2014-01-05 00:25:10.700449 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/networks.py", line 25, in <lambda>
+2014-01-05 00:25:10.700801 >     BLOCKHASH_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
+2014-01-05 00:25:10.701139 > exceptions.ImportError: No module named quark_hash
+2014-01-05 00:25:15.058458 Handshake timed out, disconnecting from 95.85.20.95:8376
+2014-01-05 00:25:15.611073 > Unhandled error in Deferred:
+2014-01-05 00:25:15.611368 > Unhandled Error
+2014-01-05 00:25:15.611443 > Traceback (most recent call last):
+2014-01-05 00:25:15.611500 > Failure: twisted.internet.defer.TimeoutError: in ReplyMatcher
+2014-01-05 00:25:19.265078 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2014-01-05 00:25:19.265244  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2014-01-05 00:25:25.644664 RECV headers 0102000000a4911196ce327159bc2bf59b3478c6f3fd7347737c355bc44944c09c000000008fcac3c55076d722dfd0a0b6c9b3b965105161fde81829be6d215538529a7fabed89c852d277021daaad4d6400
+2014-01-05 00:25:25.645606 > Error handling message: (see RECV line)
+2014-01-05 00:25:25.645734 > Traceback (most recent call last):
+2014-01-05 00:25:25.645805 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 215, in doRead
+2014-01-05 00:25:25.645869 >     return self._dataReceived(data)
+2014-01-05 00:25:25.645930 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 221, in _dataReceived
+2014-01-05 00:25:25.645992 >     rval = self.protocol.dataReceived(data)
+2014-01-05 00:25:25.646051 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 27, in dataReceived
+2014-01-05 00:25:25.646112 >     self.dataReceived2(data)
+2014-01-05 00:25:25.646169 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/datachunker.py", line 40, in _DataChunker
+2014-01-05 00:25:25.646233 >     wants = receiver.send(buf.get(wants))
+2014-01-05 00:25:25.646291 > --- <exception caught here> ---
+2014-01-05 00:25:25.646366 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 57, in dataReceiver
+2014-01-05 00:25:25.646427 >     self.packetReceived(command, type_.unpack(payload, self.ignore_trailing_payload))
+2014-01-05 00:25:25.646486 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 71, in packetReceived
+2014-01-05 00:25:25.646577 >     handler(**payload2)
+2014-01-05 00:25:25.646641 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/p2p.py", line 130, in handle_headers
+2014-01-05 00:25:25.646701 >     header_hash = self.net.BLOCKHASH_FUNC(bitcoin_data.block_header_type.pack(header))
+2014-01-05 00:25:25.646761 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/networks.py", line 25, in <lambda>
+2014-01-05 00:25:25.646819 >     BLOCKHASH_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
+2014-01-05 00:25:25.646876 > exceptions.ImportError: No module named quark_hash
+2014-01-05 00:25:29.279873 Handshake timed out, disconnecting from 95.85.20.95:8376
+2014-01-05 00:25:30.615892 > Unhandled error in Deferred:
+2014-01-05 00:25:30.616099 > Unhandled Error
+2014-01-05 00:25:30.616155 > Traceback (most recent call last):
+2014-01-05 00:25:30.616207 > Failure: twisted.internet.defer.TimeoutError: in ReplyMatcher
+2014-01-05 00:25:34.266948 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2014-01-05 00:25:34.267083  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2014-01-05 00:25:36.098650 RECV headers 0102000000764bc3109ee4d7cd596bb68458a1611a34e7472a6846916266b62cae00000000d0e99603e3ec9c77dd4161a4bd99548b9a702313c5853ded939c8391530d60c52a8ac852d277021d68042e7200
+2014-01-05 00:25:36.099461 > Error handling message: (see RECV line)
+2014-01-05 00:25:36.099560 > Traceback (most recent call last):
+2014-01-05 00:25:36.099616 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 215, in doRead
+2014-01-05 00:25:36.099669 >     return self._dataReceived(data)
+2014-01-05 00:25:36.099719 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 221, in _dataReceived
+2014-01-05 00:25:36.099770 >     rval = self.protocol.dataReceived(data)
+2014-01-05 00:25:36.099819 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 27, in dataReceived
+2014-01-05 00:25:36.099869 >     self.dataReceived2(data)
+2014-01-05 00:25:36.099917 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/datachunker.py", line 40, in _DataChunker
+2014-01-05 00:25:36.099967 >     wants = receiver.send(buf.get(wants))
+2014-01-05 00:25:36.100014 > --- <exception caught here> ---
+2014-01-05 00:25:36.100063 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 57, in dataReceiver
+2014-01-05 00:25:36.100112 >     self.packetReceived(command, type_.unpack(payload, self.ignore_trailing_payload))
+2014-01-05 00:25:36.100161 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 71, in packetReceived
+2014-01-05 00:25:36.100211 >     handler(**payload2)
+2014-01-05 00:25:36.100259 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/p2p.py", line 130, in handle_headers
+2014-01-05 00:25:36.100308 >     header_hash = self.net.BLOCKHASH_FUNC(bitcoin_data.block_header_type.pack(header))
+2014-01-05 00:25:36.100357 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/networks.py", line 25, in <lambda>
+2014-01-05 00:25:36.100406 >     BLOCKHASH_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
+2014-01-05 00:25:36.100454 > exceptions.ImportError: No module named quark_hash
+2014-01-05 00:25:40.995279 > Unhandled error in Deferred:
+2014-01-05 00:25:40.995568 > Unhandled Error
+2014-01-05 00:25:40.995636 > Traceback (most recent call last):
+2014-01-05 00:25:40.995707 > Failure: twisted.internet.defer.TimeoutError: in ReplyMatcher
+2014-01-05 00:25:46.718863 Handshake timed out, disconnecting from 95.85.20.95:8376
+2014-01-05 00:25:49.269283 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2014-01-05 00:25:49.269427  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2014-01-05 00:25:51.034907 RECV headers 0102000000764bc3109ee4d7cd596bb68458a1611a34e7472a6846916266b62cae00000000d0e99603e3ec9c77dd4161a4bd99548b9a702313c5853ded939c8391530d60c52a8ac852d277021d68042e7200
+2014-01-05 00:25:51.035726 > Error handling message: (see RECV line)
+2014-01-05 00:25:51.035821 > Traceback (most recent call last):
+2014-01-05 00:25:51.035886 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 215, in doRead
+2014-01-05 00:25:51.035948 >     return self._dataReceived(data)
+2014-01-05 00:25:51.036008 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 221, in _dataReceived
+2014-01-05 00:25:51.036068 >     rval = self.protocol.dataReceived(data)
+2014-01-05 00:25:51.036127 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 27, in dataReceived
+2014-01-05 00:25:51.036186 >     self.dataReceived2(data)
+2014-01-05 00:25:51.036244 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/datachunker.py", line 40, in _DataChunker
+2014-01-05 00:25:51.036304 >     wants = receiver.send(buf.get(wants))
+2014-01-05 00:25:51.036362 > --- <exception caught here> ---
+2014-01-05 00:25:51.036425 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 57, in dataReceiver
+2014-01-05 00:25:51.036484 >     self.packetReceived(command, type_.unpack(payload, self.ignore_trailing_payload))
+2014-01-05 00:25:51.036557 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 71, in packetReceived
+2014-01-05 00:25:51.036619 >     handler(**payload2)
+2014-01-05 00:25:51.036679 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/p2p.py", line 130, in handle_headers
+2014-01-05 00:25:51.036739 >     header_hash = self.net.BLOCKHASH_FUNC(bitcoin_data.block_header_type.pack(header))
+2014-01-05 00:25:51.036799 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/networks.py", line 25, in <lambda>
+2014-01-05 00:25:51.036862 >     BLOCKHASH_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
+2014-01-05 00:25:51.036921 > exceptions.ImportError: No module named quark_hash
+2014-01-05 00:25:54.770041 RECV headers 01020000002dc4fce2ee34ab6718a7005a5aa14ff22bca3fc923994674b2d251fd0000000091a25508997132442249eefef23f2137616fd23167aafb71b120ed698008407b398ac852d277021d7808738800
+2014-01-05 00:25:54.770511 > Error handling message: (see RECV line)
+2014-01-05 00:25:54.770621 > Traceback (most recent call last):
+2014-01-05 00:25:54.770677 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 215, in doRead
+2014-01-05 00:25:54.770733 >     return self._dataReceived(data)
+2014-01-05 00:25:54.770785 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 221, in _dataReceived
+2014-01-05 00:25:54.770839 >     rval = self.protocol.dataReceived(data)
+2014-01-05 00:25:54.770890 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 27, in dataReceived
+2014-01-05 00:25:54.770943 >     self.dataReceived2(data)
+2014-01-05 00:25:54.770994 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/datachunker.py", line 40, in _DataChunker
+2014-01-05 00:25:54.771045 >     wants = receiver.send(buf.get(wants))
+2014-01-05 00:25:54.771095 > --- <exception caught here> ---
+2014-01-05 00:25:54.771145 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 57, in dataReceiver
+2014-01-05 00:25:54.771213 >     self.packetReceived(command, type_.unpack(payload, self.ignore_trailing_payload))
+2014-01-05 00:25:54.771266 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 71, in packetReceived
+2014-01-05 00:25:54.771317 >     handler(**payload2)
+2014-01-05 00:25:54.771368 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/p2p.py", line 130, in handle_headers
+2014-01-05 00:25:54.771421 >     header_hash = self.net.BLOCKHASH_FUNC(bitcoin_data.block_header_type.pack(header))
+2014-01-05 00:25:54.771472 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/networks.py", line 25, in <lambda>
+2014-01-05 00:25:54.771524 >     BLOCKHASH_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
+2014-01-05 00:25:54.771592 > exceptions.ImportError: No module named quark_hash
+2014-01-05 00:25:56.000004 > Unhandled error in Deferred:
+2014-01-05 00:25:56.000287 > Unhandled Error
+2014-01-05 00:25:56.000361 > Traceback (most recent call last):
+2014-01-05 00:25:56.000422 > Failure: twisted.internet.defer.TimeoutError: in ReplyMatcher
+2014-01-05 00:25:59.666871 > Unhandled error in Deferred:
+2014-01-05 00:25:59.667113 > Unhandled Error
+2014-01-05 00:25:59.667178 > Traceback (most recent call last):
+2014-01-05 00:25:59.667232 > Failure: twisted.internet.defer.TimeoutError: in ReplyMatcher
+2014-01-05 00:26:02.335515 Handshake timed out, disconnecting from 95.85.20.95:8376
+2014-01-05 00:26:04.272170 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2014-01-05 00:26:04.272307  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2014-01-05 00:26:09.704161 RECV headers 01020000002dc4fce2ee34ab6718a7005a5aa14ff22bca3fc923994674b2d251fd0000000091a25508997132442249eefef23f2137616fd23167aafb71b120ed698008407b398ac852d277021d7808738800
+2014-01-05 00:26:09.704980 > Error handling message: (see RECV line)
+2014-01-05 00:26:09.705074 > Traceback (most recent call last):
+2014-01-05 00:26:09.705137 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 215, in doRead
+2014-01-05 00:26:09.705198 >     return self._dataReceived(data)
+2014-01-05 00:26:09.705262 >   File "/usr/lib64/python2.7/site-packages/Twisted-13.2.0-py2.7-linux-x86_64.egg/twisted/internet/tcp.py", line 221, in _dataReceived
+2014-01-05 00:26:09.705322 >     rval = self.protocol.dataReceived(data)
+2014-01-05 00:26:09.705380 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 27, in dataReceived
+2014-01-05 00:26:09.705438 >     self.dataReceived2(data)
+2014-01-05 00:26:09.705496 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/datachunker.py", line 40, in _DataChunker
+2014-01-05 00:26:09.705567 >     wants = receiver.send(buf.get(wants))
+2014-01-05 00:26:09.705629 > --- <exception caught here> ---
+2014-01-05 00:26:09.705687 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 57, in dataReceiver
+2014-01-05 00:26:09.705745 >     self.packetReceived(command, type_.unpack(payload, self.ignore_trailing_payload))
+2014-01-05 00:26:09.705804 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/util/p2protocol.py", line 71, in packetReceived
+2014-01-05 00:26:09.705862 >     handler(**payload2)
+2014-01-05 00:26:09.705920 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/p2p.py", line 130, in handle_headers
+2014-01-05 00:26:09.705978 >     header_hash = self.net.BLOCKHASH_FUNC(bitcoin_data.block_header_type.pack(header))
+2014-01-05 00:26:09.706036 >   File "/home/toonlynx/src/my/ololo/2chcoinp2pool-master/p2pool/bitcoin/networks.py", line 25, in <lambda>
+2014-01-05 00:26:09.706095 >     BLOCKHASH_FUNC=lambda data: pack.IntType(256).unpack(__import__('quark_hash').getPoWHash(data)),
+2014-01-05 00:26:09.706152 > exceptions.ImportError: No module named quark_hash
