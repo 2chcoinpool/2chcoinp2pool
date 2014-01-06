@@ -27,8 +27,8 @@ nets = dict(
         BLOCK_PERIOD=30, # s
         SYMBOL='2CHCOIN',
         CONF_FILE_FUNC=lambda: os.path.join(os.path.join(os.environ['APPDATA'], '2chcoin') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/Quarkcoin/') if platform.system() == 'Darwin' else os.path.expanduser('~/.2chcoin'), '2chcoin.conf'),
-        BLOCK_EXPLORER_URL_PREFIX='http://95.85.20.95:2750/chain/2chcoin/block/',
-        ADDRESS_EXPLORER_URL_PREFIX='http://95.85.20.95:2750/chain/2chcoin/address/',
+        BLOCK_EXPLORER_URL_PREFIX='http://blocks.2chcoin.in/block/',
+        ADDRESS_EXPLORER_URL_PREFIX='http://blocks.2chcoin.in/address/',
         ### Neisklar: normally 2**24 should be 2**20 BUT the quark enabled minerd is coded so that it only detects hashes below 0x000000xxxxxxx
         ###           and 2*20 would be 0x00000FFFF, maybe changing that in the miner  would be a good idea for slower ones... 
 		### Update:   the minerd is (at least in GitHub) updated so that it would also detect targets below 2**24 (0x000000xxxx..), (Quarkcoins starts with 2**20 (0x00000xxxx...))
